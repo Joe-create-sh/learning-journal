@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+     rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Information</title>
+    <script src="shared.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="container row">
+                <div class="header-content">
+                    <button class="nav-toggle">
+                        <span class="hamburger"></span>
+                    </button>
+                    <div class="logo-title-container">
+                        <svg class="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="My Learning Journal logo">
+                            <path d="M11 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40974 4.40973 4.7157 4.21799 5.09202C4 5.51985 4 6.0799 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.0799 20 7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V12.5M15.5 5.5L18.3284 8.32843M10.7627 10.2373L17.411 3.58902C18.192 2.80797 19.4584 2.80797 20.2394 3.58902C21.0205 4.37007 21.0205 5.6364 20.2394 6.41745L13.3774 13.2794C12.6158 14.0411 12.235 14.4219 11.8012 14.7247C11.4162 14.9936 11.0009 15.2162 10.564 15.3882C10.0717 15.582 9.54378 15.6885 8.48793 15.9016L8 16L8.04745 15.6678C8.21536 14.4925 8.29932 13.9048 8.49029 13.3561C8.65975 12.8692 8.89125 12.4063 9.17906 11.9786C9.50341 11.4966 9.92319 11.0768 10.7627 10.2373Z" stroke="#E3E0CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h1 class="site-name">my learning journal</h1>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list flow-nav">
+                        <li class="nav__item"><a href="/index.html">home</a></li>
+                        <li class="nav__item"><a href="/post.html">posts</a></li>
+                        <li class="nav__item"><a href="/about-page.html">about me</a></li>
+                        <li class="nav__item"><a href="/contact.html">contact</a></li>
+                    </ul>                    
+              </nav>
+        </div>           
+    </header>
+    <main>        
+        <section class="bg-light top-section-padding">
+            <div class="container">
+                <div class="contact-details flow">
+                    <h2>Get in touch</h2>
+                    <p>Please feel free to leave comments or reach out to me via any of the following methods.</p>
+                    <h2>Contact details</h2>
+                    <div class="details">
+                        <p><strong>Phone: </strong> +00353 01 123 4567</p>
+                        <p><strong>Email: </strong>info@learningjournal.com</p>
+                        <p><strong>Address: </strong>1 Learning Avenue, Dublin, Ireland</p>
+                    </div>
+                </div>
+                <h2>Send me a message</h2>
+                <form action="#">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
+                <h2>Find me</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18937.932530243495!2d-6.209857422171471!3d53.60699317402926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486722c374970fb3%3A0xa00c7a99731d490!2sBalbriggan%2C%20Co.%20Dublin!5e0!3m2!1sen!2sie!4v1725958872398!5m2!1sen!2sie"
+                        width="1200"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>My Learning Journal</p>
+        <p>Copyright &copy;2024</p>
+    </footer>     
+</body>
+</html>

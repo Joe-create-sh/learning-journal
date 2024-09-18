@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="index.css">   
+    <title>Home Page</title>
+    <script src="shared.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container row">
+                <div class="header-content">
+                    <button class="nav-toggle">
+                        <span class="hamburger"></span>
+                    </button>
+                    <div class="logo-title-container">
+                        <svg class="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="My Learning Journal logo">
+                            <path d="M11 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40974 4.40973 4.7157 4.21799 5.09202C4 5.51985 4 6.0799 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.0799 20 7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V12.5M15.5 5.5L18.3284 8.32843M10.7627 10.2373L17.411 3.58902C18.192 2.80797 19.4584 2.80797 20.2394 3.58902C21.0205 4.37007 21.0205 5.6364 20.2394 6.41745L13.3774 13.2794C12.6158 14.0411 12.235 14.4219 11.8012 14.7247C11.4162 14.9936 11.0009 15.2162 10.564 15.3882C10.0717 15.582 9.54378 15.6885 8.48793 15.9016L8 16L8.04745 15.6678C8.21536 14.4925 8.29932 13.9048 8.49029 13.3561C8.65975 12.8692 8.89125 12.4063 9.17906 11.9786C9.50341 11.4966 9.92319 11.0768 10.7627 10.2373Z" stroke="#E3E0CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h1 class="site-name">my learning journal</h1>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list flow-nav">
+                        <li class="nav__item"><a href="/index.html">home</a></li>
+                        <li class="nav__item"><a href="/post.html">posts</a></li>
+                        <li class="nav__item"><a href="/about-page.html">about me</a></li>
+                        <li class="nav__item"><a href="/contact.html">contact</a></li>
+                    </ul>                    
+              </nav>
+        </div>           
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/road-trip.jpg" alt="A picture of a road with fields on either side, mountains in the distance and a slightly overcast, summer sky">
+            <div class="container hero-content flow">
+                <h1>My new journey as a bootcamp student.</h1>
+                <p>Let's learn from one another and grow together.</p>
+            </div>
+        </section>
+        <section class="recent-posts bg-light">
+            <div class="container recent-posts-container">
+                <div class="recent-posts-grid-container">
+                    <article class="grid-column flow">
+                        <img src="images/online-world.png" alt="Animation of an elevated globe surrounded by a nexus of icons with a man and woman each standing in front of a laptop with a smartphone in the middle">
+                        <time datetime="2024-07-02">July 02, 2024</time>
+                        <h2>Introduction</h2>
+                        <p>At this point in the Bootcamp I decided to read through all of the main- and some of the sub-articles on "Mozilla Developer Network" pertaining to HTML and CSS; the maxim that "theoretical understanding follows practice"
+                            is certainly true in this regard as all the content made sense and it gave me a fuller understanding of the concepts we have been applying in Bootcamp projects. I would like to thank the contributors at MDN 
+                            for putting together this excellent resource - as well, of course, as all the team at Scrimba! - based on which I have formulated
+                            my own following rumninations and cogitations. 
+                        </p>
+                    </article>
+                    <article class="grid-column flow">
+                        <img src="images/man-in-laptop.png" alt="Animation of man speaking from inside a laptop">
+                        <time datetime="2024-08-10">August 10, 2024</time>
+                        <h2>Enter flow...</h2>
+                        <p>Thinking about and visualising in one’s head how the browser lays out elements in boxes in normal flow (which is what the browser will do by default without any CSS styling applied) can greatly aid in understanding and thereby exercising greater control over a webpage’s layout.
+                           Block-level elements, such as &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, etc., will be laid out on a new line one below the other in the “block-level direction” (i.e. top-to-bottom), while inline elements, such as &lt;span&gt;, &lt;img&gt; and text nodes (colloquially known as anonymous inline elements, i.e., not wrapped in html tags) are laid-out one next to the other enclosed in little boxes spanning the horizontal or “inline-direction” and which themselves are enclosed in another box! named the line box which, when it touches the edge of its parent box, the block-level container, will wrap onto a new line. Phew, there were a lot of boxes there!</p>
+                        <p>I like to see with my mind’s eye all these boxes as I view elements in the DOM or when I am creating same. By doing this you can sometimes quickly determine why margins and padding aren’t working the way you want them to as the problem may be to do with the default display on the element in question.</p>
+                        <p>Once you don’t set any constraints on the height or width of the block-level container, it will allow its inline content to naturally flow horizontally as far as it can to its right edge and then downwards in a naturally liquid manner. Consequently, those clever people who designed browsers have built-in responsiveness to both inline- and block-level elements. I will be expanding on the above in further blog posts.</p>   
+                    </article>
+                    <article class="grid-column flow">
+                        <img src="images/web-devices.png" alt="Animation of man standing in front of a smart phone, tablet and laptop">
+                        <time datetime="2024-08-17">August 17, 2024</time>
+                        <h2>CSS Basic Box Model</h2>
+                        <p>Following on from the last blog post and its discussion on boxes. Now is a suitable time to discuss the “CSS Basic Box Model.”
+                           When the browser renders your written HTML, it wraps all the block and inline elements in rectangular boxes containing smaller rectangular boxes.
+                           The order is as follows: content box (which for an inline element contains text, images, audio, etc.; and for a block-level box is all the line boxes that contain the inline elements) is the inner box which can be enclosed by a padding box (which is space that can be set around the top, bottom and sides of the content);
+                           next comes the border box (which, as the name suggests, is the actual outer border of the element which delineates it from other elements). Finally, all the preceding can be surrounded by a margin box, which can act as space between elements in both the inline- and block-formatting context. The margin box has no effect on the actual width and height of the element. The dimensions of an element are only impacted by its content and padding, border (if any). The margin will, however, affect the visual footprint of an element on the page.
+                        </p>
+                    </article>
+                    <article class="grid-column flow">
+                        <img src="images/seo.png" alt="Animation of man standing if front of a search engine search bar protruding from the screen">
+                        <time datetime="2024-08-25">August 25, 2024</time>
+                        <h2>Box Sizing Options</h2>
+                        <p>Now that we see how important boxes are in web layout and CSS, we need to understand how box-sizing works. There are two box-sizing methods in CSS: 1) box-sizing: content-box and 2) box-sizing: border-box.</p>
+                        <p>box-sizing: content-box applies width and height values to the content box of an element. Any padding and border values applied are added to the element’s content box dimensions which result in its total, final computed size.
+                           Using this property can entail extra calculations and more work when trying to design responsive websites. However, this property is useful where you may need precise control over the content size within a particular context such as a grid layout where text-alignment is paramount. Or, in instances where the padding and border may be required to grow or shrink dynamically without affecting the content’s dimensions.</p> 
+                        <p>box-sizing: border-box makes the padding and border part of the total width and height, so they are included with the content within the specified dimensions. The content will shrink to accommodate the added padding and border values to maintain the element’s set (also known as extrinsic, i.e., a size set by the developer independent of its content or intrinsic size – both of which will be discussed later) size. This property is especially useful to maintain consistent element size, obviating recourse to manual calculations.</p>
+                    </article>
+                    <article class="grid-column flow">
+                        <img src="images/search.png" alt="Animation of a man holding a magnifying glass in awe of a rocket flying from a browser's search bar page">
+                        <time datetime="2024-08-31">August 31, 2024</time>
+                        <h2>Display Inline-Block to the rescue!</h2>
+                        <p>Do you remember when we talked about the "inline-formatting context" and how inline elements are contained within line boxes? If so, that concept will help you understand what happens when you set an element’s display to inline-block.
+                        <p>One major difference between block-level and inline-level elements is how they manage vertical padding, borders, and margins. If you try to apply top or bottom padding, borders, or margins to an inline element, it will not push other elements above or below as you might expect. Instead, the padding or border will overlap with the content in the surrounding lines; this can make your content appear unnatural.</p> 
+                        <p>Why does this happen? It is because inline elements are aligned along a baseline — an invisible line that text sits on. Letters like "y," "p," or "j" have parts that extend below this line (called descenders), below which is the bottom of the content’s line box; the browser ensures that line boxes align properly to keep the text legible (who likes reading lines of text that jump up and down without rhyme or reason?). Because of this, vertical padding, borders, and margins do not affect the spacing of the line boxes.</p>
+                        <p>However, when an element's display property is set to inline-block, the element behaves like a block but stays on the same line. This allows it to accept vertical padding, margins, and borders without overlapping with other content. This display value comes in handy for styling elements like links, which are display inline by default. You can add vertical padding, borders, and margins to them which will take effect but will keep other inline content to its left and right.</p>                           
+                    </article>
+                    <article class="grid-column flow">
+                        <img src="images/woman-in-laptop.png" alt="Animation of a woman speaking from a laptop that has a pile of books on one side, pen and pencil to the front and an apple on the other side">
+                        <time datetime="2024-09-05">September 5, 2024</time>
+                        <h2>How the Browser renders elements by default</h2>
+                        <p>Before getting into a discussion on positioned elements and the z-index, it is first better to have a basic understanding of the default order in which the browser renders or paints elements on the screen.</p>
+                        <p>First of all, any background(s) and border(s) will be applied to the html and body elements as these form the base of the document layout; this makes sense as you want to be able to read any content which has a background behind it.</p>
+                        <p>Next the browser will render non-positioned or “static” elements – which are elements laid out in normal document flow without any special positioning rules. After static elements, floated elements (block-level elements which are still in normal document flow but can allow other block-level elements to float up beside them – there will be a separate discussion on these) are rendered.</p>
+                        <p>Inline elements are laid out within their containing block, but they will respect the margins and positioning of floated elements while their containing block may float behind same.</p>
+                        <p>Finally, the browser will render positioned elements which have a position other than static: relative, absolute, fixed, and sticky.</p>
+                        <p>Once you understand the basic rendering order, the default behaviour of positioned elements will become clearer, and you will be better equipped to then add your own custom controls to position them where you wish.</p>                     
+                    </article>
+                    <article class="grid-column extra-content hidden flow">
+                        <img src="images/globe-hovering-over-phone.png" alt="Animation of globe hovering over a smart phone">
+                        <time datetime="2024-09-05">September 05, 2024</time>
+                        <h2>Position Relative</h2>
+                        <p>We can start doing many interesting things when we set an element’s position property value to relative in CSS. While the browser will reserve its space in normal flow, we can move it relative to same by using the top, bottom, left and right values. These will move the element from the edges of its normal position by the set values to the previously mentioned. E.g. by setting bottom: 5px the element will be moved 5px up from the bottom edge of where it would normally reside. If you were to apply a value of 0 to the top, bottom, right and left, the element would stay in its normal flow position as you are telling the browser to apply an offset value of 0 from the four edges of where it would normally live.</p>  
+                        <p>Armed with our new understanding of the order in which the browser paints elements, we now understand why a relatively positioned element can appear to overlap other elements when sufficient offset values are applied.</p> 
+                        <p>As we will be discussing absolutely positioned elements next, a relatively positioned element can function as a reference point for same, as we will see.</p>                            
+                    </article>
+                    <article class="grid-column extra-content hidden flow">
+                        <img src="images/notebook-glasses.png" alt="Animation of notepad with writing on it surrounded by a pair of reading glasses, pencil and highlighter">
+                        <time datetime="2024-09-10">September 10, 2024</time>
+                        <h2>Position Absolute</h2>
+                        <p>An absolutely positioned element is taken completely out of normal flow by the browser; therefore, surrounding elements will rush in to take up the space where it would have lived as they are now oblivious to its existence. This element can be positioned relative to its nearest positioned ancestor, which has a position other than static; if none exists, then it can be positioned relative to the viewport (visible part of the screen). What this means is that the absolute-positioned element will keep searching anxiously up the DOM tree for a positioned ancestor to which it can anchor itself; finding none, it is undeterred and will settle for the viewport (well beggars can’t be choosers!).</p>
+                        <p>Now if the positioned element’s containing block is the viewport and you set its right, left, top and bottom values to 0, this will tell the browser to cover the entire viewport with same; this can come in handy for pop-up modals that you want to temporarily occupy the full viewport space until a close button or some other part thereof is clicked. This technique is used to garner a user’s full attention and gently encourage them into taking the requested action. There are many other such possibilities for this versatile free spirit, such as sidebars that appear out of nowhere, etc.</p>  
+                        <p>If you do not set an explicit width and height for an absolutely positioned element, it will size itself to its content. While setting its width to 100% or right and left both to 0 may appear to have the same effect (i.e., stretching the full width of its container), bear in mind that if you are not using box-sizing: border-box (remember that?), then setting width to 100% will not have regard for any padding or borders on the element while right and left set to 0 will encompass both.</p>
+                    </article>
+                </div>
+                <p class="view view-more-btn">View more</p>
+                <p class="view hidden view-less-btn">View less</p>
+            </div>
+        </section>
+    </main>        
+    <footer>
+        <p>My Learning Journal</p>
+        <p>Copyright &copy;2024</p>
+    </footer> 
+</body>
+</html>

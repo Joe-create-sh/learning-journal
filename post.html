@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+     rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="post.css">
+    <title>Posts</title>
+    <script src="shared.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="container row">
+                <div class="header-content">
+                    <button class="nav-toggle">
+                        <span class="hamburger"></span>
+                    </button>
+                    <div class="logo-title-container">
+                        <svg class="logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="My Learning Journal logo">
+                            <path d="M11 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40974 4.40973 4.7157 4.21799 5.09202C4 5.51985 4 6.0799 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.0799 20 7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V12.5M15.5 5.5L18.3284 8.32843M10.7627 10.2373L17.411 3.58902C18.192 2.80797 19.4584 2.80797 20.2394 3.58902C21.0205 4.37007 21.0205 5.6364 20.2394 6.41745L13.3774 13.2794C12.6158 14.0411 12.235 14.4219 11.8012 14.7247C11.4162 14.9936 11.0009 15.2162 10.564 15.3882C10.0717 15.582 9.54378 15.6885 8.48793 15.9016L8 16L8.04745 15.6678C8.21536 14.4925 8.29932 13.9048 8.49029 13.3561C8.65975 12.8692 8.89125 12.4063 9.17906 11.9786C9.50341 11.4966 9.92319 11.0768 10.7627 10.2373Z" stroke="#E3E0CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h1 class="site-name">my learning journal</h1>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list flow-nav">
+                        <li class="nav__item"><a href="/index.html">home</a></li>
+                        <li class="nav__item"><a href="/post.html">posts</a></li>
+                        <li class="nav__item"><a href="/about-page.html">about me</a></li>
+                        <li class="nav__item"><a href="/contact.html">contact</a></li>
+                    </ul>                    
+              </nav>
+        </div>           
+    </header>
+        <main>
+            <section class="bg-light top-section-padding">
+                <div class="container intro-padding">
+                    <div class="flow posts-intro">
+                        <h2>My new journey as a bootcamp student.</h2>
+                        <p>I hope you find my blog posts helpful and that they will inspire you to write your own reflections and insights; everyone has a different
+                            perspective, which is what makes both life and web development so interesting. Your written reflections will really help to develop and mature your learnings; 
+                            and you will find that your facility to articulate and recall concepts will vastly improve.</p> 
+                        <p>I strongly encourage you to get out the old-fashioned notebook and pen and start writing; once you start you will wonder why you didn't do
+                            so a long time ago!
+                        </p>                
+                        <img src="images/man-on-mountain-with-laptop.png" class="nomad-bro" alt="Animation of man on mountain with a laptop">               
+                    </div>                   
+                </div>
+            </section>
+            <section class="recent-posts post-about bg-light">
+                <div class="container recent-posts-container">
+                    <h2 class="recent-posts-title">Recent Posts</h2>
+                    <div class="recent-posts-grid-container">
+                        <article class="grid-column flow">
+                            <img src="images/taking-notes.png" alt="Animation of a man holding a big pencil standing in front of two notepads - one lying on the ground and one standing upright behind it">
+                            <time datetime="2024-09-13">September 13, 2024</time>
+                            <h2>Position Fixed</h2>
+                            <p>position: fixed is like absolute in most respects except that it is generally positioned relative to the viewport except for a few advanced exceptions. For this discussion, we will just focus on its normal use case.</p> 
+                            <p>The header on this website has a position of fixed, width of 100%, top value of 0 and a z-index value of 999. These values mean that the header will always remain at the head of the page as the user scrolls (check it out if you don't believe me!), stretching the full width of the viewport and will always float on top of all elements on the page which have a z-index of less than 999.</p>
+                            <p>Now is an opportune time to speak about z-index. This property allows us to stack elements along the imaginary z-axis that runs from the screen out towards you. This property will only affect elements with a position other than static – i.e., all those which we are presently discussing. Positioned elements have a default z-index of auto which means that if an integer value is not applied the positioned elements will be stacked according to source order, which means later elements will appear on top; when this property is given an integer value it creates a “stacking context” for the element, which means that descendant elements with a z-index integer value are sandboxed within the parent thereby being isolated from surrounding elements. Higher values will remain on top while lower values will be at the bottom of the z-axis within the parent element. Negative values can be implemented to place elements behind others, if you so wish.</p>                               
+                        </article>
+                        <article class="grid-column flow">
+                            <img src="images/girl-taking-notes.png" alt="Animation of a girl sitting on the ground taking notes in front of a laptop">
+                            <time datetime="2024-09-15">September 15, 2024</time>
+                            <h2>Position Sticky</h2>
+                            <p>This position contains the attributes of both relative and fixed positions. How it works is that initially it will act like a relative positioned element in that it will just stay in its position in the normal flow; however, the magic of this position appears when you give it a top, bottom, left, or right value so that when its normal flow position reaches the prescribed values from the viewport’s edge, it will just stay “stuck” there as if it has seen a ghost!</p> 
+                            <p>Pretty cool effects can be created with this position such as headers in alphabetised lists that will remain at the top of the screen until their list is scrolled off screen and which will then be replaced with the next header, and so on.</p>                              
+                        </article>
+                        <article class="grid-column flow">
+                            <img src="images/idea.png" alt="Animation of a man with a lightbulb over his head sitting down with a large notepad in front of him">
+                            <time datetime="2024-09-16">September 16, 2024</time>
+                            <h2>Flexbox Introduction</h2>
+                            <p>Having discussed positioning methods for individual elements, we will now discuss Flexbox, a very useful modern tool that greatly aids in the layout and alignment of content in a single dimension, i.e., either a single row or column. Flexbox provides very efficient, quick and easy ways to distribute space between flex items (which are children of a flex container).</p> 
+                            <p>In order to set an element to be a flex container, you set its display property to display:flex (this will make the flex container itself behave as a block-level element in relation to surrounding elements); display: inline-flex will make the flex container behave as an inline element.</p> 
+                            <p>With the display property set, a flex container’s items (children) can be aligned along a main axis (horizontal or inline direction when the flex-direction property is set to row, which is the default) and/or cross axis (which is in the block-level or vertical direction); if flex-direction is set to column the above axes are inverted. I like to use the visualisation technique discussed earlier also here to see with my mind’s eye the main and cross axes. Getting into the habit of visualising these lines running across and up/down the flex container is a great way to quickly become comfortable with using the various flexbox properties to easily align and space the flex children.  These properties will be discussed next.</p>                               
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>My Learning Journal</p>
+            <p>Copyright &copy;2024</p>
+        </footer>     
+</body>
+</html>

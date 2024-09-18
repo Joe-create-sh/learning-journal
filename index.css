@@ -1,0 +1,56 @@
+.hero{
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+
+.hero img{
+
+    margin:0;
+    max-height:65vh;
+    width:auto;
+    object-fit:cover;
+
+}
+
+.hero-content{
+
+    position:absolute;
+    font-family: var(--ff-script);
+    color:var(--clr-text-light);
+    text-shadow: 2px 2px 2px #000;
+    right:10%;
+    left:10%;
+    padding-bottom: 2em;
+    
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
